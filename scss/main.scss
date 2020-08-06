@@ -1,0 +1,782 @@
+
+
+
+
+@import "_bootstrap";
+
+@import "_misvariables";
+
+
+//body
+
+
+//padre de todo
+.padre-todo{
+    
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+
+}
+
+//quedate en casa
+
+
+
+//header
+.container__cabecera{
+    
+    @extend .col-sm-12; 
+    @extend .col-md-12;
+    @extend .col-lg-12;
+    @extend .col-xl-12;
+
+}
+
+
+//redes 
+
+#facebook {
+
+    height: 2rem;
+    width: 2rem;
+}
+
+#whatsapp{
+
+    height: 2rem;
+    width: 2rem;
+}
+
+#instagram{
+    height: 2rem;
+    width: 2rem;
+}
+
+
+.social-bar {
+	position: absolute;
+	right: 0;
+	top: 35%;
+	font-size: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+}
+
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: 0.5rem;
+	display: flex;
+	transition: all .5s;
+}
+
+.icon-facebook {
+	background: #2E406E;
+}
+
+.icon-twitter {
+	background: #4fbb41;
+}
+
+.icon-youtube {
+	background: #ac2e7b;
+}
+
+.icon-instagram {
+	background: #3F60A5;
+}
+
+.icon:first-child {
+	border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+	border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+
+
+
+
+
+//barra de navegacion
+
+.container__nav {
+    
+    @extend.col-sm-12;
+    @extend.col-md-12;
+    @extend.col-lg-12;
+    @extend.col-xl-12;
+    @extend .navbar;
+    @extend .navbar-expand-lg;
+    @extend .navbar-light;
+    @extend .bg-light;    
+    background-color: white !important;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+
+
+    
+}
+.container__nav__barra{
+
+@extend .navbar-brand;
+
+}
+.container__nav__barra__icononav {
+    @extend .navbar-toggler;
+    
+}
+.barra__icononav__imagen{
+    @extend .navbar-toggler-icon;
+    
+}
+.container__nav__barra__navegador {
+
+    @extend .navbar-nav;
+    
+}
+.navegador__boton{
+  
+    @extend .nav-item;
+}
+
+.navegador__boton:hover{
+
+    border-top: 1px solid green;
+    
+}
+.boton__link{
+
+    @extend .nav-link;
+    justify-content: center;
+}
+
+//carrusel
+
+#img__carrusel{
+    height: 27rem;
+}
+
+//box
+
+
+
+#caja-principal {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+
+#envios{
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/index/fonfo-madera.jpg);
+    box-sizing: border-box;
+  background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    height: 10rem;
+    
+}
+
+
+//titulos de pagina
+.tit-pag{
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    text-align: center  ;
+
+
+}
+
+
+
+//Titulos
+
+.jumbotron{
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+    background-image: url(../img/superfondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+  
+  
+  
+
+//section
+
+.section__gral{
+    
+    @extend .col-12;
+    
+    background-color: white;
+    justify-content: center;
+
+
+}
+
+
+//suscripcion
+
+.box-sus{
+    @extend .row;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../img/index/fonfo-madera.jpg);
+    background-attachment: fixed;
+    height: auto;
+    color: #ffffff;
+    font-family: 'Kaushan Script', cursive;
+   
+
+    #tit{
+        font-size: 2rem;  
+    }
+
+    .sus{
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+       justify-items: center;
+       justify-content: center;
+       justify-self: center;
+        width: 80%;
+       
+
+    }
+
+  
+
+    .form-sus{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        background-attachment: fixed;
+        background-image: url(../img/index/fonfo-madera.jpg);
+
+    }
+
+    #input-tel{
+
+        width: 100%;
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    #img-w{
+        
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #input-submit{
+
+        width: 80%;
+        padding: 1rem;
+    }
+}
+   
+
+
+//top
+
+.top-3{
+
+    @extend .row; 
+     margin-top: 1rem;
+     color: #ffffff;
+   
+}
+
+.top-3__caja{
+    @extend.text-white; @extend.col-xl-6;
+    
+ 
+}
+
+
+
+.top__3__cajas{
+    @extend.card-body;
+    justify-content: center;
+    justify-items: center;
+    height: 20rem;
+
+}
+
+#img1{
+        background-image: url(../img/index/corazon.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+   
+}
+#img2{
+    background-image: url(../img/index/novedades.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#img2:hover{
+   
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+#img1:hover{
+    transform: scale(0.9);
+ 
+    transition: 1s;
+}
+
+
+
+.top-3__caja__imagen{
+
+    @extend.card-img;
+    height: 30rem;
+    width: 20rem;
+    
+    box-shadow: 0px 0px 15px black;
+
+   
+ 
+    
+}
+
+
+
+
+.links_img{
+    position: absolute;
+    display: block;
+    top: 2rem;    
+    left: 6rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #ffffff;
+    
+}
+
+//productos
+
+.top-3__caja__productos {
+
+    @extend.card-img;
+    height: 30rem;
+    width:  100%;
+    size: cover;
+    box-shadow: 0px 0px 15px black;
+}
+
+.card-title{
+
+    background-color: rgba(0, 0, 0, 0.692);
+    border-radius: 0.5rem;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+
+}
+
+.card-text {
+    background-color: rgba(0, 0, 0, 0.692);
+    width: 100%;
+    border-radius: 0.5rem;
+    text-align: center;
+
+}
+
+//pedido
+
+
+.tit-pedido{
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    text-align: center  ;
+    color: blanchedalmond;
+
+}
+
+
+//acordion
+
+.acordion{
+    @extend .card;
+   
+}
+
+
+//contacto
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+
+.container {
+  max-width: 400px;
+  width: 100%;
+ 
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+
+
+
+#contact button:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+.fb-xfbml-parse-ignore{
+    width: 100%;
+}
+
+
+//footer
+
+.container__footer{
+
+    @extend .row;
+    justify-content: center;
+    align-items: center ;
+}
+
+//Responsive
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 346px) { 
+
+
+    
+       
+    .section__gral{
+    
+     
+        
+        background-color: white;
+        justify-content: center;
+    
+    
+    }
+
+    .box-sus{
+
+        height: 35rem;
+
+    }
+
+    @mixin col12 {
+    
+        @extend.col-sm-12;
+        @extend.col-md-12;
+        @extend.col-lg-12;
+        @extend.col-xl-12;
+    }
+//nav
+
+    .logo-nav{
+
+        display: flex;
+        width: 10rem;
+        height: 8rem;
+    }
+    //carusel
+
+    #img__carrusel{
+        height: 10rem;
+    }
+
+    //top
+
+    .top-3__caja__imagen{
+
+       align-items: center;
+       align-self: center;
+       justify-content: center;
+
+        width: 21rem;
+       height: 15rem;
+       
+    }
+
+    //acordion
+    .accordion{
+        text-align: center;
+    }
+    .pagos{
+
+      
+        
+        width: 60%;
+        height: auto;
+        
+    }
+
+    .top-3__caja{margin-top: 1rem;margin-bottom: 0.5rem;}
+    
+
+    .links_img{
+
+        left: 1rem;
+        padding: 0rem;
+        font-size: 16px ;
+        align-content: center;
+        text-align: center;
+    }
+
+    //susbscripcion
+
+   
+    .form-inline{
+        display:flex;
+        background-color: #4e4e4e;
+        justify-content: center;
+        justify-items: center;
+        height: 15rem;
+        text-align: center;
+        margin-top: 1rem;
+    
+        #inputPassword2{
+            width: 50rem;
+            padding: 1rem;
+            margin: 8px;
+        }
+    
+    }
+
+    //Contacto
+
+
+
+    .top-3__caja__productos {
+       
+        height: 20rem;
+ 
+    }
+
+    
+ }
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+
+
+     //carusel
+
+     #img__carrusel{
+        height: 15rem;
+    }
+    //top
+
+    .top-3__caja__imagen{
+        
+        height: 20rem;
+        width: auto;
+    
+    }
+
+
+    .links_img{
+
+        left: 1rem;
+        padding: 1rem;
+        font-size: 16px ;
+    }
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+    //carusel
+
+    #img__carrusel{
+        height: 23rem;
+    }
+    //top
+
+    .top-3__caja__imagen{
+       
+        height: 30rem;
+        width: auto;
+
+    
+    }
+
+    .links_img{
+
+        left: 0rem;
+        padding: 0rem;
+        font-size: 16px ;
+    }
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+//top
+    .top-3__caja__imagen{
+        
+    height: 30rem;
+    width: auto;
+
+
+}
+
+.links_img{
+
+    left: 6rem;
+    padding: 1rem;
+    font-size: 16px ;
+}
+
+}
